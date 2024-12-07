@@ -1,0 +1,103 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #1e3c72, #030d1d, #6dd5ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.con {
+    background: linear-gradient(135deg, rgb(39, 3, 3), rgba(0, 0, 0, 0.2));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    padding: 30px 40px;
+    text-align: center;
+    width: 400px;
+    backdrop-filter: blur(15px);
+}
+
+.con h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1.5px;
+}
+
+.con label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.con input[type="text"] {
+    width: 85%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.con input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: #ffffff;
+}
+
+.con button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.con button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.con p#error {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ff4b5c;
+    display: none; /* Hidden by default */
+}
+
+@media (max-width: 480px) {
+    .con {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .con h1 {
+        font-size: 24px;
+    }
+
+    .con input[type="text"],
+    .con button {
+        width: 100%;
+    }
+}
